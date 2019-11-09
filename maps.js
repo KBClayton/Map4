@@ -10,7 +10,7 @@ $(document).ready(function() {
       
     wait().then(function(){
 
-                var location_001={lat: 35.520387, lng: -97.624925}
+                var location_001={lat: 32.520387, lng: -97.624925}
 
                 var point_001 = new google.maps.Marker({
                     position: location_001,
