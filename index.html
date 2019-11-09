@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  
+   
     <title>Discharge Point Map</title>
     <style>
        #map {
@@ -12,6 +12,7 @@
        }
     </style>
       <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+      <script src="MeasureTool.min.js"></script>
       <script src="maps.js"></script>
       <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoQLe8s7JUbTZ_ubXhGY4cUmLiNqWvQxw&callback=initMap">
@@ -23,12 +24,17 @@
 
     var map;
       function initMap() {
-        var uluru = {lat: 32.520387, lng: -97.624925};
+        var uluru = {lat: 32.51, lng: -97.624925};
          map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 16,
+          zoom: 14,
           center: uluru
         });
       }
+   measureTool = new MeasureTool(map, {
+  showSegmentLength: true,
+  tooltip: true,
+  unit: MeasureTool.UnitTypeId.IMPERIAL // metric, imperial, or nautical
+  });
     </script>
   </body>
 </html>

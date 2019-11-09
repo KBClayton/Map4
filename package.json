@@ -1,0 +1,22 @@
+{
+  "name": "map4",
+  "version": "1.0.0",
+  "description": "map of discharge point",
+  "main": "maps.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KBClayton/Map4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KBClayton/Map4/issues"
+  },
+  "homepage": "https://github.com/KBClayton/Map4#readme",
+  "dependencies": {
+    "measuretool-googlemaps-v3": "^0.4.2"
+  }
+}

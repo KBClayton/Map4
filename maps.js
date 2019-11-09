@@ -18,6 +18,13 @@ $(document).ready(function() {
                 });
                 point_001.setMap(map); 
                     
-    
+                var location_002={lat: 32.501725, lng: -97.626662}
+
+                var point_002 = new google.maps.Marker({
+                    position: location_002,
+                    title: "15 acre lake on Fall Creek tributary"
+                });
+                point_002.setMap(map); 
+                    
     })
 });
