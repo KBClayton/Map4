@@ -26,11 +26,12 @@
       function initMap() {
         var uluru = {lat: 32.51, lng: -97.624925};
          map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 14,
+          zoom: 15,
           center: uluru
         });
       }
-   measureTool = new MeasureTool(map, {
+    
+  var measureTool = new MeasureTool(map, {
   showSegmentLength: true,
   tooltip: true,
   unit: MeasureTool.UnitTypeId.IMPERIAL // metric, imperial, or nautical
