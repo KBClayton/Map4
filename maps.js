@@ -25,6 +25,10 @@ $(document).ready(function() {
                     title: "15 acre lake on Fall Creek tributary"
                 });
                 point_002.setMap(map); 
+                var measureTool = new MeasureTool(map, {
+                    showSegmentLength: true,
+                    unit: MeasureTool.UnitTypeId.IMPERIAL // or just use 'imperial'
+                  });
                     
     })
 });
